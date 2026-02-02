@@ -1,0 +1,14 @@
+C:\git-repos\microservices-world-trip\WorldTripTrends\bin\Debug\net9.0\WorldTripTrends.exe
+C:\git-repos\microservices-world-trip\WorldTripTrends\bin\Debug\net9.0\WorldTripTrends.deps.json
+C:\git-repos\microservices-world-trip\WorldTripTrends\bin\Debug\net9.0\WorldTripTrends.runtimeconfig.json
+C:\git-repos\microservices-world-trip\WorldTripTrends\bin\Debug\net9.0\WorldTripTrends.dll
+C:\git-repos\microservices-world-trip\WorldTripTrends\bin\Debug\net9.0\WorldTripTrends.pdb
+C:\git-repos\microservices-world-trip\WorldTripTrends\obj\Debug\net9.0\WorldTripTrends.GeneratedMSBuildEditorConfig.editorconfig
+C:\git-repos\microservices-world-trip\WorldTripTrends\obj\Debug\net9.0\WorldTripTrends.AssemblyInfoInputs.cache
+C:\git-repos\microservices-world-trip\WorldTripTrends\obj\Debug\net9.0\WorldTripTrends.AssemblyInfo.cs
+C:\git-repos\microservices-world-trip\WorldTripTrends\obj\Debug\net9.0\WorldTripTrends.csproj.CoreCompileInputs.cache
+C:\git-repos\microservices-world-trip\WorldTripTrends\obj\Debug\net9.0\WorldTripTrends.dll
+C:\git-repos\microservices-world-trip\WorldTripTrends\obj\Debug\net9.0\refint\WorldTripTrends.dll
+C:\git-repos\microservices-world-trip\WorldTripTrends\obj\Debug\net9.0\WorldTripTrends.pdb
+C:\git-repos\microservices-world-trip\WorldTripTrends\obj\Debug\net9.0\WorldTripTrends.genruntimeconfig.cache
+C:\git-repos\microservices-world-trip\WorldTripTrends\obj\Debug\net9.0\ref\WorldTripTrends.dll
