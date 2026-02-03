@@ -48,10 +48,10 @@ jobs:
             --image $IMAGE_NAME:$IMAGE_TAG \
             .
 
-      - name: Deploy to Azure Container Apps
+      - name: Deploy Container Apps Job
         run: |
           IMAGE_TAG=$(echo $GITHUB_SHA | cut -c1-7)
-          az containerapp update \
+          az containerapp job update \
             --name $CONTAINER_APP_NAME \
             --resource-group $RESOURCE_GROUP \
             --image $ACR_NAME.azurecr.io/$IMAGE_NAME:$IMAGE_TAG
