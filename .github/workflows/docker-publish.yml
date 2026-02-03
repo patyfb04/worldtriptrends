@@ -1,7 +1,6 @@
 name: Build and Deploy .NET Microservice to Azure Container Apps
 
 on:
-  workflow_dispatch:
   push:
     branches:
       - master
