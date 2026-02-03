@@ -48,10 +48,29 @@ jobs:
             --image $IMAGE_NAME:$IMAGE_TAG \
             .
 
-      - name: Deploy Container Apps Job
+      - name: Create or Update Container Apps Job
         run: |
           IMAGE_TAG=$(echo $GITHUB_SHA | cut -c1-7)
-          az containerapp job update \
-            --name $CONTAINER_APP_NAME \
-            --resource-group $RESOURCE_GROUP \
-            --image $ACR_NAME.azurecr.io/$IMAGE_NAME:$IMAGE_TAG
+          IMAGE="$ACR_NAME.azurecr.io/$IMAGE_NAME:$IMAGE_TAG"
+
+          # Check if job exists
+          if az containerapp job show \
+              --name $CONTAINER_APP_NAME \
+              --resource-group $RESOURCE_GROUP >/dev/null 2>&1; then
+            echo "Job exists. Updating..."
+            az containerapp job update \
+              --name $CONTAINER_APP_NAME \
+              --resource-group $RESOURCE_GROUP \
+              --image $IMAGE
+          else
+            echo "Job does not exist. Creating..."
+            az containerapp job create \
+              --name $CONTAINER_APP_NAME \
+              --resource-group $RESOURCE_GROUP \
+              --environment $CONTAINERAPPS_ENVIRONMENT \
+              --image $IMAGE \
+              --trigger-type manual \
+              --replica-timeout 1800 \
+              --replica-retry-limit 1 \
+              --replica-completion-count 1
+          fi
