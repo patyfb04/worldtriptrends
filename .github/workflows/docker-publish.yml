@@ -8,7 +8,7 @@ on:
 env:
   ACR_NAME: worldtripapp
   IMAGE_NAME: worldtriptrends
-  CONTAINER_APP_NAME: worldtriptrends
+  CONTAINER_APP_NAME: world-trip-job
   RESOURCE_GROUP: worldtrip-rg
   AZURE_REGION: eastus
 
